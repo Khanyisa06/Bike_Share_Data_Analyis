@@ -3,12 +3,13 @@
 Welcome to the Cyclistic bike-share analysis case study! In this case study,I perform many real-world tasks of a junior data
 analyst. I work for a fictional company, Cyclistic, and meet different characters and team members. In order to answer the
 key business questions, I follow the steps of the data analysis process: **ask, prepare, process, analyze, share, and act**.
+
+**The director of marketing believes the company’s future success depends on maximizing the number of annual memberships.**
  
-I work in the marketing analyst team at Cyclistic as a junior data analys, a bike-share company in Chicago. The director of
-marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, we have to
-to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, we have to
-design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve our
-recommendations, so they must be backed up with compelling data insights and professional data visualizations.
+- I will work in the marketing analyst team at Cyclistic , a bike-share company in Chicago as a junior data analyst .
+- As a team we have to understand how casual riders and annual members use Cyclistic bikes differently.
+- From these insights, design a new marketing strategy to convert casual riders into annual members.
+- But first, Cyclistic executives must approve our recommendations, so they must be backed up with compelling data insights and professional data visualizations.
 
  ## *Table of Contents*
  
@@ -48,7 +49,7 @@ To achieve this, the data analysis process will be followed, encompassing key st
 **Note:**
 - The datasets have a different name because Cyclistic is a fictional company.
 - For the purposes of this case study, the datasets are appropriateand will enable you to answer the business questions.
-- The data has been made available by Motivate International Inc. [under this license](https://divvybikes.com/data-license-agreement)
+- The data has been made available by Motivate International Inc. [Under this license](https://divvybikes.com/data-license-agreement)
 - You can choose to work with an entire year of data, or just one quarter of a year.
 - If you are working in Google Sheets, there are some files that might be too large to view.
 - This is public data that you can use to explore how different customer types are using Cyclistic bikes.
