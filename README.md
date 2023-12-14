@@ -274,6 +274,44 @@ __*Determine the popular  birth year (Annual Subscriber)*__
 
 ## Findings
 Based on the analysis of the data this were my findings
+- Annual members ride more frequently than casual riders
+- On average, customers have a longer trip duration of 14 minutes compared to subscribers, who have an average trip duration of 9 minutes based on the provided data.
+- June and May stand out as the peak months for user activity, with both annual subscribers and casual users showing the highest engagement in these periods.
+- This suggests a notable difference in the gender distribution within the subscriber category, with a higher number of male subscribers compared to female subscribers.
+- Classic bikes are more popular among subscribers, with significantly higher usage compared to electric bikes.
+- The classic bike is more popular than the electric bike, with significantly higher usage by both subscribers and customers
+
+- The route from "Lake Shore Dr & Monroe St" to "Streeter Dr & Grand Ave" is the most popular among customers, with 4786 trips recorded.
+- Streeter Dr & Grand Ave" is a central station for customers, being either the starting or ending point in several popular routes.
+
+- Canal St & Adams St" to "Michigan Ave & Washington St" is the most frequented route among subscribers, with 4587 trips recorded.
+-  Stations like "Michigan Ave & Washington St," "Canal St & Adams St," and "Columbus Dr & Randolph St" are central to the subscriber routes.
+
+-  For Customers, Monday has the highest ride count, while Sunday has the lowest.
+For Subscribers, Wednesday has the highest ride count, while Sunday still has a lower count compared to other weekdays.
+For Customers, Monday is the peak day, while for Subscribers, Wednesday is the peak day.
+
+Customers contribute more to the overall ride counts on weekends, especially on Saturday.
+On weekdays, their contribution is lower compared to Subscribers.
+
+
+
+- both Subscribers and Customers have an average start time for rides at 13:00 PM. This suggests that, on average, users from both categories tend to initiate their rides around 1:00 PM.
+
+- service is more popular during the daytime, especially in the afternoon, for both Subscribers and Customers.
+- Subscribers contribute significantly to the overall ride counts, with a higher frequency during peak hours.
+- Both Subscribers and Customers have similar patterns in terms of hourly ride distribution, with peaks during the late afternoon and valleys during the late-night and early morning hours.
+- There is a significant drop in ride counts during late-night hours (from 22:00 to 5:00), for both Subscribers and Customers.
+- The busiest hours seem to be in the afternoon, particularly around 5 PM (17:00), with 30,782 and 12,758 rides by Subscribers and Customers, respectively.
+- There is also notable activity in the morning hours around 8 AM and 9 AM.
+
+
+subscribers born in the 1990s and early 1980s are more numerous compared to those born in the 1970s and earlier.
+There is a noticeable presence of subscribers born in the late 1990s and early 2000s, suggesting engagement from a younger audience.
+There is a general trend of decreasing subscriber counts as birth years move further away from the 1990s, indicating a potential decline in user engagement or adoption among older age groups.
+The counts generally decrease as birth years move away from the 1990s, indicating a decline in subscriber numbers for older age groups.
+The birth years from the early 1980s to the mid-1990s have relatively high counts, indicating a significant user presence in these age groups
+The birth year 1992 has the highest count, with 207,341 subscribers.
 
 
 ## Recommendation
