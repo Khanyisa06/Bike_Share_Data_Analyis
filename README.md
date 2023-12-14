@@ -62,7 +62,7 @@ To achieve this, the data analysis process will be followed, encompassing key st
 ### Data cleaning Steps
 Below I outline the data cleaning steps I performed for the "Cyclist_Trip_Data" and "Quarterly" datasets using both Excel and SQL Server Management Studio (SSMS). 
 
-**For Cyclist_Trip_Data:**
+*For Cyclist_Trip_Data I:*
 
 1. Deleted unnecessary columns.
 2. Removed rides with durations greater than 24 hours or less than one minute.
@@ -72,7 +72,7 @@ Below I outline the data cleaning steps I performed for the "Cyclist_Trip_Data" 
 6. Filtered and deleted rows with blank values.
 7. Manually corrected any inconsistent or erroneous data.
 
-**For Quarterly data I:**
+*For Quarterly data I:*
 
 1. Renamed columns to standardize names (e.g., "tripduraton" to "Trip_Duration").
 2. Standardized column names (e.g., "usertype" to "User_Type").
@@ -85,16 +85,26 @@ Below I outline the data cleaning steps I performed for the "Cyclist_Trip_Data" 
 7. Filtered and deleted rows with blank values.
  
 The data cleaning process resulted in a cleaned and standardized dataset ready for analysis. Further details and insights can be explored in the cleaned_data.csv file.
-
  
-
 ### Exploratory Data Analysis
 
-1. How do annual members and casual riders use Cyclistic bikes differently?
-2. Why would casual riders buy Cyclistic annual memberships?
-3. How can Cyclistic use digital media to influence casual riders to become members?
+1. **Distinguishing Usage Patterns:**
+   - Explore ride frequency, duration, and popular routes for both annual members and casual riders.
+   - Analyze peak usage times for each group to understand when they use Cyclistic bikes differently.
+   - Investigate any noticeable patterns or trends in user behavior, such as preferred ride times or specific days of the week.
 
-  
+2. **Motivations for Annual Memberships:**
+   - Examine data related to casual riders who transitioned to annual memberships.
+   - Identify common factors among these riders, such as frequency of use, cost-effectiveness, or special promotions.
+   - Investigate if there are certain time periods when casual riders are more likely to convert to annual memberships.
+
+3. **Digital Media Influence:**
+   - Analyze the effectiveness of current digital media campaigns in attracting casual riders.
+   - Identify key demographics of casual riders and tailor digital content accordingly.
+   - Assess the correlation between promotional campaigns and the conversion of casual riders to annual memberships.
+     
+These exploratory analyses will help Cyclistic gain valuable insights into the differences in bike usage patterns between annual members and casual riders. 
+
 ### Data Analysis
  
 
