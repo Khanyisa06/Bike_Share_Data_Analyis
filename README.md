@@ -10,10 +10,10 @@ key business questions, I follow the steps of the data analysis process: **ask, 
  
  ## *Table of Contents*
  
-  2. [Project Objectives](#project-objectives)
+  2. [Objectives](#objectives)
   3. [Data Sources](#data-sources)
   4. [Project Tools](#project-tools)
-  5. [Data cleaning](#data-cleaning)
+  5. [Data cleaning Steps](#data-cleaning-steps)
   6. [Exploratory Data Analysis](#exploratory-data-analysis)
   7. [Data Analysis](#data-analysis)
   8. [Findings](#findings)
@@ -85,7 +85,7 @@ __*For Quarterly data  I:*__
 6. Formatted "Start_Time" and "End_Time" as "y:m:d h:s."
 7. Filtered and deleted rows with blank values.
  
-## Exploratory Data Analysis(EDA)
+## Exploratory Data Analysis
 
 1. __*Distinguishing Usage Patterns:*__
    - Explore ride frequency, duration, and popular routes for both annual members and casual riders.
@@ -267,7 +267,7 @@ GROUP BY
 
 ## Findings
 
-__Based on my analysis of the data this are my summerized findings__
+__Based on my analysis of the data these are my summerized findings__
 
 - __*Annual members ride more frequently than casual riders*__
 
