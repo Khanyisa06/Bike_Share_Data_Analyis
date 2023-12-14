@@ -314,8 +314,7 @@ For Subscribers, Wednesday has the highest ride count, while Sunday still has a 
 For Customers, Monday is the peak day, while for Subscribers, Wednesday is the peak day.
 Customers contribute more to the overall ride counts on weekends, especially on Saturday.
 On weekdays, their contribution is lower compared to Subscribers.
-![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/e39c1f56-5407-4485-8245-a8aaf88724e9)
-
+ ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/85ff58f4-bf76-43f6-a2dd-f30817b6b5d8)
 
 
 - both Subscribers and Customers have an average start time for rides at 13:00 PM. This suggests that, on average, users from both categories tend to initiate their rides around 1:00 PM.
