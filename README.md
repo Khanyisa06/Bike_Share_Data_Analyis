@@ -74,19 +74,18 @@ Below I outline the data cleaning steps I performed for the "Cyclist_Trip_Data" 
 
 *For Quarterly data I:*
 
-1. Renamed columns to standardize names (e.g., "tripduraton" to "Trip_Duration").
-2. Standardized column names (e.g., "usertype" to "User_Type").
-3. Renamed columns for clarity (e.g., "birthyear" to "Birth_Year").
-    - Replaced null values in the "Birth_Year" column with 0.
-4. Standardized column names (e.g., "gender" to "Gender").
-    - Replaced null values in the "Gender" column with "Not-Applicable."
-5. Converted time from seconds to minutes.
+1. Renamed columns to standardize names
+ - "tripduraton" to "Trip_Duration"
+ - "usertype" to "User_Type"
+ - "birthyear" to "Birth_Year", Replaced null values in the Birth_Year column with 0.
+ - "gender" to "Gender" , Replaced null values in the "Gender" column with "Not-Applicable."
+5. Converted time from seconds to minutes for Trip_duration.
 6. Formatted "Start_Time" and "End_Time" as "y:m:d h:s."
 7. Filtered and deleted rows with blank values.
  
 The data cleaning process resulted in a cleaned and standardized dataset ready for analysis. Further details and insights can be explored in the cleaned_data.csv file.
  
-### Exploratory Data Analysis
+### Exploratory Data Analysis(EDA)
 
 1. **Distinguishing Usage Patterns:**
    - Explore ride frequency, duration, and popular routes for both annual members and casual riders.
