@@ -1,4 +1,4 @@
-# Bike_Share_Data_Analyis
+# Bike_Share_Data_Analysis
 
 Welcome to the Cyclistic bike-share analysis case study! In this case study,I perform many real-world tasks of a junior data
 analyst. I work for a fictional company, Cyclistic, and meet different characters and team members. In order to answer the
@@ -23,7 +23,7 @@ key business questions, I follow the steps of the data analysis process: **ask, 
 
 ## Objectives
 
-__*Produce a report with the following deliverables:*__
+__Produce a report with the following deliverables:__
 
 1. A clear statement of the business task
 2. A description of all data sources used
@@ -41,7 +41,7 @@ To achieve this, the data analysis process will be followed, encompassing key st
 
 ## Data Sources
 
-I  used Cyclistic’s historical trip data to analyze and identify trends. [Download the Cyclistic trip data here](https://divvy-tripdata.s3.amazonaws.com/index.html).
+__I used Cyclistic’s historical trip data to analyze and identify trends.__ [Download the Cyclistic trip data here](https://divvy-tripdata.s3.amazonaws.com/index.html).
   
 **Note:**
 - The datasets have a different name because Cyclistic is a fictional company.
@@ -62,9 +62,7 @@ I  used Cyclistic’s historical trip data to analyze and identify trends. [Down
  
 ## Data cleaning Steps
 
-Below I outline the data cleaning steps I performed for the "Cyclist_Trip_Data" and "Quarterly data" datasets using both Excel and SQL Server Management Studio (SSMS). 
-
-In the preparation phase I performed the following tasks
+__Below I outline the data cleaning steps I performed for the "Cyclist_Trip_Data" and "Quarterly data" datasets using both Excel and SQL Server Management Studio (SSMS).__ 
 
 __*For Cyclist_Trip_Data I:*__
 1. load the data for inspection
@@ -87,8 +85,6 @@ __*For Quarterly data  I:*__
 6. Formatted "Start_Time" and "End_Time" as "y:m:d h:s."
 7. Filtered and deleted rows with blank values.
  
-The data cleaning process resulted in a cleaned and standardized dataset ready for analysis. Further details and insights can be explored in the cleaned_data.csv file.
- 
 ## Exploratory Data Analysis(EDA)
 
 1. __*Distinguishing Usage Patterns:*__
@@ -104,18 +100,13 @@ The data cleaning process resulted in a cleaned and standardized dataset ready f
 3. __*Digital Media Influence:*__
    - Analyze the effectiveness of current digital media campaigns in attracting casual riders.
    - Identify key demographics of casual riders and tailor digital content accordingly.
-   - Assess the correlation between promotional campaigns and the conversion of casual riders to annual memberships.
-     
-These exploratory analyses will help Cyclistic gain valuable insights into the differences in bike usage patterns between annual members and casual riders. 
+   - Assess the correlation between promotional campaigns and the conversion of casual riders to annual memberships. 
 
 ## Data Analysis
+   
+__To extract valuable insights and patterns fro the datasets I utilized SQL queries to analyze the Cyclist_Trip_Data and Quarterly(merged into one full yer) datasets__
 
-- I utilized SQL queries to analyze the Cyclist_Trip_Data and Quarterly datasets..
-- I merged all Quarterley data into one full year.
-  
-To extract valuable insights and patterns fro the datasets you have to,  
-
-__*Determine the distribution of user types (Casual Rider vs. Annual Subscriber)*__
+1. __*Determine the distribution of user types (Casual Rider vs. Annual Subscriber)*__
 ``` sql
 SELECT
     User_Type,
@@ -126,7 +117,7 @@ GROUP BY
     User_Type;
 ```
 
-__*Determine the number of users per month (Casual Rider vs. Annual Subscriber)*__
+2. __*Determine the number of users per month (Casual Rider vs. Annual Subscriber)*__
 ``` sql
  SELECT
     CASE MONTH(Start_Time)
@@ -154,7 +145,7 @@ ORDER BY
        Monthly_Users    DESC;
 ```
 
-__*Determine the number of users by gender (Annual Subscriber)*__
+3. __*Determine the number of users by gender (Annual Subscriber)*__
 ``` sql
    SELECT
     User_Type,
@@ -169,7 +160,7 @@ GROUP BY
     User_Type,
     Gender;
 ```
-__* Determine the prefered bike type (Casual Rider vs. Annual Subscriber)*__
+4. __* Determine the prefered bike type (Casual Rider vs. Annual Subscriber)*__
 ``` sql
  SELECT
 	User_Type, Ride_Type,
@@ -184,7 +175,7 @@ ORDER BY
 Ride_Count DESC;
 ```
 
-__*Determine the average trip duration the distribution of user types (Casual Rider vs. Annual Subscriber)*__
+5. __*Determine the average trip duration the distribution of user types (Casual Rider vs. Annual Subscriber)*__
 ``` sql
  SELECT
     User_Type,
@@ -196,7 +187,7 @@ GROUP BY
 ORDER BY
     Avg_Trip_Duration DESC;
 ```
-__*Determine the popular ride start and end  stations (Casual Rider vs. Annual Subscriber)*__
+6. __*Determine the popular ride start and end  stations (Casual Rider vs. Annual Subscriber)*__
 ``` sql
    SELECT  
     User_Type,
@@ -214,7 +205,7 @@ ORDER BY
     Route_Count DESC;
 ```
 
-__*Determine the popular weekday for rides (Casual Rider vs. Annual Subscriber)*__
+7. __*Determine the popular weekday for rides (Casual Rider vs. Annual Subscriber)*__
 ``` sql
  SELECT
     CASE
@@ -239,7 +230,7 @@ ORDER BY
     Ride_Count DESC;
 ```
 
-__*Determine the popular time of the day for for rides (Casual Rider vs. Annual Subscriber)*__
+8. __*Determine the popular time of the day for for rides (Casual Rider vs. Annual Subscriber)*__
 ``` sql
    SELECT
     User_Type,
@@ -254,7 +245,7 @@ ORDER BY
     Ride_Count DESC;
 ```
 
-__*Determine the popular average time of the day for rides (Casual Rider vs. Annual Subscriber)*__
+9. __*Determine the popular average time of the day for rides (Casual Rider vs. Annual Subscriber)*__
 ``` sql
   
 	 SELECT
@@ -266,7 +257,7 @@ GROUP BY
    User_Type;
 ```
 
-__*Determine the popular  birth year (Annual Subscriber)*__
+10. __*Determine the popular  birth year (Annual Subscriber)*__
 ``` sql
   SELECT  User_Type,Birth_Year, COUNT(*) AS Birthyear_Count
 	FROM DBO.Cyclist_Data_FullYear  
@@ -275,100 +266,93 @@ __*Determine the popular  birth year (Annual Subscriber)*__
 ```
 
 ## Findings
-__*Based on my analysis of the data this are my summerized findings*__
 
-                  Annual members ride more frequently than casual riders
+__Based on my analysis of the data this are my summerized findings__
+
+- __*Annual members ride more frequently than casual riders*__
 
   ![User_Destributin](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/4737d00d-668f-4a96-abcd-6241371f1a6f)
   
-
-On average, Customers have a longer trip duration of 14 minutes compared to Subscribers, who have an average trip duration of 9 minutes based on the provided data.
+- __*On average, Customers have a longer trip duration of 14 minutes compared to Subscribers, who have an average trip duration of 9 minutes*__
 
 ![Average Trip Duration](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/aea3a59d-7884-4bb3-ba06-3123359ab93f)
   
-- June and May stand out as the peak months for user activity, with both annual subscribers and casual users showing the highest engagement in these periods.
+- __*June and May stand out as the peak months for user activity, with both annual subscribers and casual users showing the highest engagement in these periods.*__
+
  ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/fe56c334-6813-4229-b62d-e2fc4215cb84)
 
-
-  
- the gender distribution within the subscriber category, with a higher number of male subscribers compared to female subscribers.
+-  __*The gender distribution within the subscriber category, with a higher number of male subscribers compared to female subscribers.*__
 
   ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/fb90aeb4-277d-4b5e-ba95-7ff1f137b32d)
 
-   
-- The classic bike is more popular than the electric bike, with significantly higher usage by both subscribers and customers
+- __*The classic bike is more popular than the electric bike, with significantly higher usage by both subscribers and customers*__
+  
   ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/1f92203c-e5bd-4dee-bae4-10115b678399)
 
-
-- The route from "Lake Shore Dr & Monroe St" to "Streeter Dr & Grand Ave" is the most popular among customers, with 4786 trips recorded.
-- Streeter Dr & Grand Ave" is a central station for customers, being either the starting or ending point in several popular routes.
-
-- Canal St & Adams St" to "Michigan Ave & Washington St" is the most frequented route among subscribers, with 4587 trips recorded.
--  Stations like "Michigan Ave & Washington St," "Canal St & Adams St," and "Columbus Dr & Randolph St" are central to the subscriber routes.
-
+- __*The route from "Lake Shore Dr & Monroe St" to "Streeter Dr & Grand Ave" is the most popular among customers*__
+- __*Streeter Dr & Grand Ave" is a central station for customers, being either the starting or ending point in several popular routes.*__
+- __*Canal St & Adams St" to "Michigan Ave & Washington St" is the most frequented route among subscribers.*__
+- __*Stations like "Michigan Ave & Washington St," "Canal St & Adams St," and "Columbus Dr & Randolph St" are central to the subscriber routes.*__
+  
   ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/777a2dce-2b6a-404c-ad42-131ca295b190)
 
 
-For Customers, Monday has the highest ride count, while Sunday has the lowest.
-For Subscribers, Wednesday has the highest ride count, while Sunday still has a lower count compared to other weekdays.
-For Customers, Monday is the peak day, while for Subscribers, Wednesday is the peak day.
-Customers contribute more to the overall ride counts on weekends, especially on Saturday.
-On weekdays, their contribution is lower compared to Subscribers.
+- __*For Customers, Monday is the peak day, while for Subscribers, Wednesday is the peak day.*__
+- __*For Customers and Subscribers Sunday has a lower ride counts.*__
+- __*Customers contribute more to the overall ride counts on weekends, especially on Saturday.*__
+- __*Subscribers contribute more to the overall ride counts on weekdays*__
+ 
  ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/85ff58f4-bf76-43f6-a2dd-f30817b6b5d8)
 
-
-- both Subscribers and Customers have an average start time for rides at 13:00 PM. This suggests that, on average, users from both categories tend to initiate their rides around 1:00 PM.
-
-- service is more popular during the daytime, especially in the afternoon, for both Subscribers and Customers.
-- Subscribers contribute significantly to the overall ride counts, with a higher frequency during peak hours.
-- Both Subscribers and Customers have similar patterns in terms of hourly ride distribution, with peaks during the late afternoon and valleys during the late-night and early morning hours.
-- There is a significant drop in ride counts during late-night hours (from 22:00 to 5:00), for both Subscribers and Customers.
-- The busiest hours seem to be in the afternoon, particularly around 5 PM (17:00), with 30,782 and 12,758 rides by Subscribers and Customers, respectively.
-- There is also notable activity in the morning hours around 8 AM and 9 AM.
+- __* Service is more popular during the daytime, especially in the afternoon, for both Subscribers and Customers.*__
+- __*There is a significant drop in ride counts during late-night hours (from 22:00 to 5:00), for both Subscribers and Customers.*__
+- __*The busiest hours seem to be in the afternoon, particularly around 5 PM (17:00) by Subscribers and Customers, respectively.*__
+ 
 ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/367f50bf-d64f-4608-9898-4e8f98a23d1a)
-
-
-subscribers born in the 1990s and early 1980s are more numerous compared to those born in the 1970s and earlier.
-There is a noticeable presence of subscribers born in the late 1990s and early 2000s, suggesting engagement from a younger audience.
-There is a general trend of decreasing subscriber counts as birth years move further away from the 1990s, indicating a potential decline in user engagement or adoption among older age groups.
-The counts generally decrease as birth years move away from the 1990s, indicating a decline in subscriber numbers for older age groups.
-The birth years from the early 1980s to the mid-1990s have relatively high counts, indicating a significant user presence in these age groups
-The birth year 1992 has the highest count, with 207,341 subscribers.
-
+  
+- __*subscribers born in the 1990s and early 1980s are more numerous compared to those born in the 1970s and earlier.*__
+- __*There is a noticeable presence of subscribers born in the late 1990s and early 2000s, suggesting engagement from a younger audience.*__
+- __*The is a general decrease as birth years move away from the 1990s, indicating a decline in subscriber numbers for older age groups..*__
+- __*The birth year 1992 has the highest number of subscribers.*__
+  
 ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/e828e3cf-7630-4c37-ba53-a3ee6bc21379)
 
 
-DASH BOARDS
-SUBS
+__HERE IS THE WHOLE DATA DISPLAYED IN A DASHBOARD__
+
+- __*Annual Subscribers*__
+
 ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/1028b03c-28b3-483a-9136-07a320d69a58)
 
-CUSTO
+- __*Casual Customers*__
+
 ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/e489f63e-8550-4713-8e01-3275ceec091c)
 
 
+both Subscribers and Customers have an average start time for rides at 13:00 PM. This suggests that, on average, users from both categories tend to initiate their rides around 1:00 PM.
+
 ## Recommendation
- 
-Implement referral programs that reward current annual members for referring casual riders who successfully convert to annual memberships.
-Leverage word-of-mouth marketing to encourage casual riders to consider the benefits of long-term membership.
-
-Introduce limited-time promotional offers or discounts for casual riders who sign up for annual memberships.
-Provide incentives such as free trial periods or bonus ride credits to encourage the transition to annual memberships.
-
-Capitalize on the popularity of classic bikes among subscribers by promoting features or events related to classic bike usage.
-Develop targeted marketing campaigns to attract more users, particularly females, to the subscriber category.
-Allocate resources efficiently during peak months like June and May to meet increased demand.
-Ensure an adequate supply of classic bikes, considering their popularity among both subscribers and customers.
-Optimize bike station facilities and services at popular locations like "Streeter Dr & Grand Ave" and "Canal St & Adams St" to enhance the overall user experience.
-Provide incentives for users to explore less congested routes, balancing the load on popular routes.
-Implement promotions or discounts during non-peak hours to encourage bike usage during these times.
-Leverage the insight about Monday being a peak day for customers and Wednesday for subscribers to create targeted promotions on these days.
-Investigate reasons behind the decline in subscriber numbers for older age groups and develop strategies to re-engage these segments.
-Enhance the user interface of the bike-sharing platform to provide a seamless experience, especially during peak hours.
-Explore the integration of technologies such as mobile apps or notifications to keep users informed about bike availability and promotions.
-Tailor marketing efforts to address the preferences and behaviors of users born in the late 1990s and early 2000s, considering their higher engagement.
+__These are my reccomandations__
+- Implement referral programs that reward current annual members for referring casual riders who successfully convert to annual memberships.
+- Leverage word-of-mouth marketing to encourage casual riders to consider the benefits of long-term membership.
+- Introduce limited-time promotional offers or discounts for casual riders who sign up for annual memberships.
+- Provide free trial periods or bonus ride credits to encourage the transition to annual memberships.
+- Develop targeted marketing campaigns to attract more users, particularly females, to the subscriber category.
+- Allocate resources efficiently during peak months like June and May to meet increased demand.
+- Ensure an adequate supply of classic bikes, considering their popularity among both subscribers and customers.
+- Optimize bike station facilities and services at popular locations like "Streeter Dr & Grand Ave" and "Canal St & Adams St" to enhance the overall user experience.
+- Provide incentives for users to explore less congested routes, balancing the load on popular routes.
+- Implement promotions or discounts during non-peak hours to encourage bike usage during these times.
+- Leverage the insight about Monday being a peak day for customers and Wednesday for subscribers to create targeted promotions on these days.
+- Investigate reasons behind the decline in subscriber numbers for older age groups and develop strategies to re-engage these segments.
+- Enhance the user interface of the bike-sharing platform to provide a seamless experience, especially during peak hours.
+- Explore the integration of technologies such as mobile apps or notifications to keep users informed about bike availability and promotions.
+- Tailor marketing efforts to address the preferences and behaviors of users born in the late 1990s and early 2000s, considering their higher engagement.
 
 ## Limitations
-I have removed all the tables and colmns from the dataset that I didnt need because they would have affected the accuracy of my analysis and findings
+- I have removed all the tables and colmns from the dataset that I didnt need because they would have affected the accuracy of my analysis and findings
+- All rides greater than 24 hours and less than 1 minute are irrelevent
+
 
 ## References
 
