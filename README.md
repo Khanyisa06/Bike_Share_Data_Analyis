@@ -64,8 +64,10 @@ I  used Cyclistic’s historical trip data to analyze and identify trends. [Down
 
 Below I outline the data cleaning steps I performed for the "Cyclist_Trip_Data" and "Quarterly data" datasets using both Excel and SQL Server Management Studio (SSMS). 
 
-__*For Cyclist_Trip_Data I:*__
+In the preparation phase I performed the following tasks
 
+__*For Cyclist_Trip_Data I:*__
+1. load the data for inspection
 1. Deleted unnecessary columns.
 2. Removed rides with durations greater than 24 hours or less than one minute.
 3. Created a "Ride_Length" column calculated as (Ended_at - Started_at) in HH:MM:SS format.
@@ -273,9 +275,15 @@ __*Determine the popular  birth year (Annual Subscriber)*__
 ```
 
 ## Findings
-Based on the analysis of the data this were my findings
-- Annual members ride more frequently than casual riders
+__*Based on my analysis of the data this are my summerized findings*__
+
+                  Annual members ride more frequently than casual riders
+
+  ![User_Destributin](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/4737d00d-668f-4a96-abcd-6241371f1a6f)
+  
+
 - On average, customers have a longer trip duration of 14 minutes compared to subscribers, who have an average trip duration of 9 minutes based on the provided data.
+  
 - June and May stand out as the peak months for user activity, with both annual subscribers and casual users showing the highest engagement in these periods.
 - This suggests a notable difference in the gender distribution within the subscriber category, with a higher number of male subscribers compared to female subscribers.
 - Classic bikes are more popular among subscribers, with significantly higher usage compared to electric bikes.
@@ -316,6 +324,8 @@ The birth year 1992 has the highest count, with 207,341 subscribers.
 
 ## Recommendation
  
+Implement referral programs that reward current annual members for referring casual riders who successfully convert to annual memberships.
+Leverage word-of-mouth marketing to encourage casual riders to consider the benefits of long-term membership.
 
 ## Limitations
 I have removed all the tables and colmns from the dataset that I didnt need because they would have affected the accuracy of my analysis and findings
