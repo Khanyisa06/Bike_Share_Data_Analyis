@@ -6,7 +6,7 @@ key business questions, I follow the steps of the data analysis process: **ask, 
  
 - I will work in the marketing analyst team at Cyclistic , a bike-share company in Chicago as a junior data analyst .
 - As a team we have to understand how casual riders and annual members use Cyclistic bikes differently.
-- From these insights, design a new marketing strategy to convert casual riders into annual members.
+- From these insights, design a new marketing strategy to convert Casual  Riders into Annual Members.
  
  ## *Table of Contents*
  
@@ -34,7 +34,7 @@ __*Produce a report with the following deliverables:*__
  
 ## Business Task
 
-The primary business task is to understand how casual riders and annual members use Cyclistic bikes differently. As a junior data analyst in the marketing team, the goal is to gather insights that will inform the development of a targeted marketing strategy. The overarching objective is to maximize the number of annual memberships(convert casual riders into annual members), as identified by the director of marketing. 
+The primary business task is to understand how casual riders and annual members use Cyclistic bikes differently. As a junior data analyst in the marketing team, the goal is to gather insights that will inform the development of a targeted marketing strategy. The overarching objective is to maximize the number of annual memberships(convert Casual Riders into Annual Members), as identified by the director of marketing. 
 
 To achieve this, the data analysis process will be followed, encompassing key steps such as asking relevant questions, preparing and processing the data, conducting a thorough analysis, and ultimately sharing actionable insights. The success of the proposed marketing strategy hinges on obtaining approval from Cyclistic executives, necessitating the presentation of compelling data insights and professional data visualizations. The outcome of this analysis will not only address the immediate task of understanding user behavior but will also serve as the foundation for strategic decisions aimed at enhancing Cyclistic's future success in the bike-share market.
 
@@ -338,6 +338,13 @@ The birth year 1992 has the highest count, with 207,341 subscribers.
 ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/e828e3cf-7630-4c37-ba53-a3ee6bc21379)
 
 
+DASH BOARDS
+SUBS
+![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/1028b03c-28b3-483a-9136-07a320d69a58)
+
+CUSTO
+![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/e489f63e-8550-4713-8e01-3275ceec091c)
+
 
 ## Recommendation
  
@@ -346,6 +353,19 @@ Leverage word-of-mouth marketing to encourage casual riders to consider the bene
 
 Introduce limited-time promotional offers or discounts for casual riders who sign up for annual memberships.
 Provide incentives such as free trial periods or bonus ride credits to encourage the transition to annual memberships.
+
+Capitalize on the popularity of classic bikes among subscribers by promoting features or events related to classic bike usage.
+Develop targeted marketing campaigns to attract more users, particularly females, to the subscriber category.
+Allocate resources efficiently during peak months like June and May to meet increased demand.
+Ensure an adequate supply of classic bikes, considering their popularity among both subscribers and customers.
+Optimize bike station facilities and services at popular locations like "Streeter Dr & Grand Ave" and "Canal St & Adams St" to enhance the overall user experience.
+Provide incentives for users to explore less congested routes, balancing the load on popular routes.
+Implement promotions or discounts during non-peak hours to encourage bike usage during these times.
+Leverage the insight about Monday being a peak day for customers and Wednesday for subscribers to create targeted promotions on these days.
+Investigate reasons behind the decline in subscriber numbers for older age groups and develop strategies to re-engage these segments.
+Enhance the user interface of the bike-sharing platform to provide a seamless experience, especially during peak hours.
+Explore the integration of technologies such as mobile apps or notifications to keep users informed about bike availability and promotions.
+Tailor marketing efforts to address the preferences and behaviors of users born in the late 1990s and early 2000s, considering their higher engagement.
 
 ## Limitations
 I have removed all the tables and colmns from the dataset that I didnt need because they would have affected the accuracy of my analysis and findings
