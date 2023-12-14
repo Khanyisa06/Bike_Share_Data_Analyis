@@ -282,12 +282,23 @@ __*Based on my analysis of the data this are my summerized findings*__
   ![User_Destributin](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/4737d00d-668f-4a96-abcd-6241371f1a6f)
   
 
-- On average, customers have a longer trip duration of 14 minutes compared to subscribers, who have an average trip duration of 9 minutes based on the provided data.
+On average, Customers have a longer trip duration of 14 minutes compared to Subscribers, who have an average trip duration of 9 minutes based on the provided data.
+
+![Average Trip Duration](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/aea3a59d-7884-4bb3-ba06-3123359ab93f)
   
 - June and May stand out as the peak months for user activity, with both annual subscribers and casual users showing the highest engagement in these periods.
-- This suggests a notable difference in the gender distribution within the subscriber category, with a higher number of male subscribers compared to female subscribers.
-- Classic bikes are more popular among subscribers, with significantly higher usage compared to electric bikes.
+ ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/fe56c334-6813-4229-b62d-e2fc4215cb84)
+
+
+  
+ the gender distribution within the subscriber category, with a higher number of male subscribers compared to female subscribers.
+
+  ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/fb90aeb4-277d-4b5e-ba95-7ff1f137b32d)
+
+   
 - The classic bike is more popular than the electric bike, with significantly higher usage by both subscribers and customers
+  ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/1f92203c-e5bd-4dee-bae4-10115b678399)
+
 
 - The route from "Lake Shore Dr & Monroe St" to "Streeter Dr & Grand Ave" is the most popular among customers, with 4786 trips recorded.
 - Streeter Dr & Grand Ave" is a central station for customers, being either the starting or ending point in several popular routes.
@@ -295,12 +306,15 @@ __*Based on my analysis of the data this are my summerized findings*__
 - Canal St & Adams St" to "Michigan Ave & Washington St" is the most frequented route among subscribers, with 4587 trips recorded.
 -  Stations like "Michigan Ave & Washington St," "Canal St & Adams St," and "Columbus Dr & Randolph St" are central to the subscriber routes.
 
--  For Customers, Monday has the highest ride count, while Sunday has the lowest.
+  ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/777a2dce-2b6a-404c-ad42-131ca295b190)
+
+
+For Customers, Monday has the highest ride count, while Sunday has the lowest.
 For Subscribers, Wednesday has the highest ride count, while Sunday still has a lower count compared to other weekdays.
 For Customers, Monday is the peak day, while for Subscribers, Wednesday is the peak day.
-
 Customers contribute more to the overall ride counts on weekends, especially on Saturday.
 On weekdays, their contribution is lower compared to Subscribers.
+![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/e39c1f56-5407-4485-8245-a8aaf88724e9)
 
 
 
@@ -312,6 +326,7 @@ On weekdays, their contribution is lower compared to Subscribers.
 - There is a significant drop in ride counts during late-night hours (from 22:00 to 5:00), for both Subscribers and Customers.
 - The busiest hours seem to be in the afternoon, particularly around 5 PM (17:00), with 30,782 and 12,758 rides by Subscribers and Customers, respectively.
 - There is also notable activity in the morning hours around 8 AM and 9 AM.
+
 
 
 subscribers born in the 1990s and early 1980s are more numerous compared to those born in the 1970s and earlier.
@@ -326,6 +341,9 @@ The birth year 1992 has the highest count, with 207,341 subscribers.
  
 Implement referral programs that reward current annual members for referring casual riders who successfully convert to annual memberships.
 Leverage word-of-mouth marketing to encourage casual riders to consider the benefits of long-term membership.
+
+Introduce limited-time promotional offers or discounts for casual riders who sign up for annual memberships.
+Provide incentives such as free trial periods or bonus ride credits to encourage the transition to annual memberships.
 
 ## Limitations
 I have removed all the tables and colmns from the dataset that I didnt need because they would have affected the accuracy of my analysis and findings
