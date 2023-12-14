@@ -3,14 +3,11 @@
 Welcome to the Cyclistic bike-share analysis case study! In this case study,I perform many real-world tasks of a junior data
 analyst. I work for a fictional company, Cyclistic, and meet different characters and team members. In order to answer the
 key business questions, I follow the steps of the data analysis process: **ask, prepare, process, analyze, share, and act**.
-
-**The director of marketing believes the company’s future success depends on maximizing the number of annual memberships.**
  
 - I will work in the marketing analyst team at Cyclistic , a bike-share company in Chicago as a junior data analyst .
 - As a team we have to understand how casual riders and annual members use Cyclistic bikes differently.
 - From these insights, design a new marketing strategy to convert casual riders into annual members.
-- But first, Cyclistic executives must approve our recommendations, so they must be backed up with compelling data insights and professional data visualizations.
-
+ 
  ## *Table of Contents*
  
   2. [Project Objectives](#project-objectives)
@@ -56,16 +53,43 @@ To achieve this, the data analysis process will be followed, encompassing key st
 - But note that data-privacy issues prohibit you from using riders’ personally identifiable information
 
 ### Project Tools
-R STUDIO or Posit cloud
-Spreadsheets EXCEL
-Tableau
+- R Studio/Posit Cloud
+- EXCEL
+- Tableau
+- SQL Server Management Studio
+- Google 
  
-### Data cleaning
+### Data cleaning Steps
+Below I outline the data cleaning steps I performed for the "Cyclist_Trip_Data" and "Quarterly" datasets using both Excel and SQL Server Management Studio (SSMS). 
+
+**For Cyclist_Trip_Data:**
+
+1. Deleted unnecessary columns.
+2. Removed rides with durations greater than 24 hours or less than one minute.
+3. Created a "Ride_Length" column calculated as (Ended_at - Started_at) in HH:MM:SS format.
+4. Created a "Day_of_Week" column using the WEEKDAY function on "Started_at" and formatted as a number with 0 decimals.
+5. Renamed the "member" column to "Customer_Type," replacing "casual" with "Casual_Riders" and "member" with "Cyclist_Member."
+6. Filtered and deleted rows with blank values.
+7. Manually corrected any inconsistent or erroneous data.
+
+**For Quarterly data I:**
+
+1. Renamed columns to standardize names (e.g., "tripduraton" to "Trip_Duration").
+2. Standardized column names (e.g., "usertype" to "User_Type").
+3. Renamed columns for clarity (e.g., "birthyear" to "Birth_Year").
+    - Replaced null values in the "Birth_Year" column with 0.
+4. Standardized column names (e.g., "gender" to "Gender").
+    - Replaced null values in the "Gender" column with "Not-Applicable."
+5. Converted time from seconds to minutes.
+6. Formatted "Start_Time" and "End_Time" as "y:m:d h:s."
+7. Filtered and deleted rows with blank values.
+ 
+The data cleaning process resulted in a cleaned and standardized dataset ready for analysis. Further details and insights can be explored in the cleaned_data.csv file.
+
  
 
 ### Exploratory Data Analysis
 
-Three questions will guide the future marketing program:
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cyclistic annual memberships?
 3. How can Cyclistic use digital media to influence casual riders to become members?
