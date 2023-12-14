@@ -325,7 +325,7 @@ On weekdays, their contribution is lower compared to Subscribers.
 - There is a significant drop in ride counts during late-night hours (from 22:00 to 5:00), for both Subscribers and Customers.
 - The busiest hours seem to be in the afternoon, particularly around 5 PM (17:00), with 30,782 and 12,758 rides by Subscribers and Customers, respectively.
 - There is also notable activity in the morning hours around 8 AM and 9 AM.
-
+![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/367f50bf-d64f-4608-9898-4e8f98a23d1a)
 
 
 subscribers born in the 1990s and early 1980s are more numerous compared to those born in the 1970s and earlier.
@@ -334,6 +334,9 @@ There is a general trend of decreasing subscriber counts as birth years move fur
 The counts generally decrease as birth years move away from the 1990s, indicating a decline in subscriber numbers for older age groups.
 The birth years from the early 1980s to the mid-1990s have relatively high counts, indicating a significant user presence in these age groups
 The birth year 1992 has the highest count, with 207,341 subscribers.
+
+![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/e828e3cf-7630-4c37-ba53-a3ee6bc21379)
+
 
 
 ## Recommendation
