@@ -5,8 +5,8 @@ analyst. I work for a fictional company, Cyclistic, and meet different character
 key business questions, I follow the steps of the data analysis process: **ask, prepare, process, analyze, share, and act**.
  
 - I will work in the marketing analyst team at Cyclistic , a bike-share company in Chicago as a junior data analyst .
-- As a team we have to understand how casual riders and annual members use Cyclistic bikes differently.
-- From these insights, design a new marketing strategy to convert Casual  Riders into Annual Members.
+- As a team we have to understand how casual customers and annual subscriber use Cyclistic bikes differently.
+- From these insights, design a new marketing strategy to convert Casual Customer into Annual Subcriber.
  
  ## *Table of Contents*
  
@@ -34,9 +34,9 @@ __Produce a report with the following deliverables:__
  
 ## Business Task
 
-The primary business task is to understand how casual riders and annual members use Cyclistic bikes differently. As a junior data analyst in the marketing team, the goal is to gather insights that will inform the development of a targeted marketing strategy. The overarching objective is to maximize the number of annual memberships(convert Casual Riders into Annual Members), as identified by the director of marketing. 
+The primary business task is to understand how casual riders and annual members use Cyclistic bikes differently. As a junior data analyst in the marketing team, the goal is to gather insights that will inform the development of a targeted marketing strategy. The overarching objective is to maximize the number of annual memberships(convert Casual Customer  into Annual Subscriber), as identified by the director of marketing. 
 
-To achieve this, the data analysis process will be followed, encompassing key steps such as asking relevant questions, preparing and processing the data, conducting a thorough analysis, and ultimately sharing actionable insights. The success of the proposed marketing strategy hinges on obtaining approval from Cyclistic executives, necessitating the presentation of compelling data insights and professional data visualizations. The outcome of this analysis will not only address the immediate task of understanding user behavior but will also serve as the foundation for strategic decisions aimed at enhancing Cyclistic's future success in the bike-share market.
+To achieve this, the data analysis process will be followed, encompassing key steps such as asking relevant questions, preparing and processing the data, conducting a thorough analysis, and ultimately sharing actionable insights. The outcome of this analysis will not only address the immediate task of understanding user behavior but will also serve as the foundation for strategic decisions aimed at enhancing Cyclistic's future success in the bike-share market.
 
 
 ## Data Sources
@@ -70,7 +70,7 @@ __*For Cyclist_Trip_Data I:*__
 2. Removed rides with durations greater than 24 hours or less than one minute.
 3. Created a "Ride_Length" column calculated as (Ended_at - Started_at) in HH:MM:SS format.
 4. Created a "Day_of_Week" column using the WEEKDAY function on "Started_at" and formatted as a number with 0 decimals.
-5. Renamed the "member" column to "Customer_Type," replacing "casual" with "Casual_Riders" and "member" with "Cyclist_Member."
+5. Renamed the "member" column to "Customer_Type," replacing "casual" with "Casual Customer" and "member" with "Cyclist_Member."
 6. Filtered and deleted rows with blank values.
 7. Manually corrected any inconsistent or erroneous data.
 
@@ -87,25 +87,25 @@ __*For Quarterly data  I:*__
 ## Exploratory Data Analysis
 
 1. __*Distinguishing Usage Patterns:*__
-   - Explore ride frequency, duration, and popular routes for both annual members and casual riders.
+   - Explore ride frequency, duration, and popular routes for both annual members and  Casual Customer.
    - Analyze peak usage times for each group to understand when they use Cyclistic bikes differently.
    - Investigate any noticeable patterns or trends in user behavior, such as preferred ride times or specific days of the week.
 
 2. __*Motivations for Annual Memberships:*__
-   - Examine data related to casual riders who transitioned to annual memberships.
+   - Examine data related to  Casual Customer who transitioned to annual memberships.
    - Identify common factors among these riders, such as frequency of use, cost-effectiveness, or special promotions.
-   - Investigate if there are certain time periods when casual riders are more likely to convert to annual memberships.
+   - Investigate if there are certain time periods when  Casual Customer are more likely to convert to annual memberships.
 
 3. __*Digital Media Influence:*__
-   - Analyze the effectiveness of current digital media campaigns in attracting casual riders.
-   - Identify key demographics of casual riders and tailor digital content accordingly.
-   - Assess the correlation between promotional campaigns and the conversion of casual riders to annual memberships. 
+   - Analyze the effectiveness of current digital media campaigns in attracting  Casual Customer.
+   - Identify key demographics of Casual  Customer and tailor digital content accordingly.
+   - Assess the correlation between promotional campaigns and the conversion of Casual Customer to Annual memberships. 
 
 ## Data Analysis
    
 __To extract valuable insights and patterns fro the datasets I utilized SQL queries to analyze the Cyclist_Trip_Data and Quarterly(merged into one full yer) datasets__
 
-1. __*Determine the distribution of user types (Casual Rider vs. Annual Subscriber)*__
+1. __*Determine the distribution of user types (Casual Customer vs. Annual Subscriber)*__
 ``` sql
 SELECT
     User_Type,
@@ -116,7 +116,7 @@ GROUP BY
     User_Type;
 ```
 
-2. __*Determine the number of users per month (Casual Rider vs. Annual Subscriber)*__
+2. __*Determine the number of users per month (Casual Customer Rider vs. Annual Subscriber)*__
 ``` sql
  SELECT
     CASE MONTH(Start_Time)
@@ -159,7 +159,7 @@ GROUP BY
     User_Type,
     Gender;
 ```
-4. __* Determine the prefered bike type (Casual Rider vs. Annual Subscriber)*__
+4. __* Determine the prefered bike type (Casual Customer vs. Annual Subscriber)*__
 ``` sql
  SELECT
 	User_Type, Ride_Type,
@@ -174,7 +174,7 @@ ORDER BY
 Ride_Count DESC;
 ```
 
-5. __*Determine the average trip duration the distribution of user types (Casual Rider vs. Annual Subscriber)*__
+5. __*Determine the average trip duration the distribution of user types (Casual Customer vs. Annual Subscriber)*__
 ``` sql
  SELECT
     User_Type,
@@ -186,7 +186,7 @@ GROUP BY
 ORDER BY
     Avg_Trip_Duration DESC;
 ```
-6. __*Determine the popular ride start and end  stations (Casual Rider vs. Annual Subscriber)*__
+6. __*Determine the popular ride start and end  stations (Casual Customer vs. Annual Subscriber)*__
 ``` sql
    SELECT  
     User_Type,
@@ -204,7 +204,7 @@ ORDER BY
     Route_Count DESC;
 ```
 
-7. __*Determine the popular weekday for rides (Casual Rider vs. Annual Subscriber)*__
+7. __*Determine the popular weekday for rides (Casual Customer vs. Annual Subscriber)*__
 ``` sql
  SELECT
     CASE
@@ -229,7 +229,7 @@ ORDER BY
     Ride_Count DESC;
 ```
 
-8. __*Determine the popular time of the day for for rides (Casual Rider vs. Annual Subscriber)*__
+8. __*Determine the popular time of the day for for rides (Casual Customer vs. Annual Subscriber)*__
 ``` sql
    SELECT
     User_Type,
@@ -244,7 +244,7 @@ ORDER BY
     Ride_Count DESC;
 ```
 
-9. __*Determine the popular average time of the day for rides (Casual Rider vs. Annual Subscriber)*__
+9. __*Determine the popular average time of the day for rides (Casual Customervs. Annual Subscriber)*__
 ``` sql
   
 	 SELECT
@@ -268,7 +268,7 @@ GROUP BY
 
 __Based on my analysis of the data these are my summerized findings__
 
-- __*Annual members ride more frequently than casual riders*__
+- __*Annual Subcribers ride more frequently than casual Customer*__
 
   ![User_Destributin](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/4737d00d-668f-4a96-abcd-6241371f1a6f)
   
@@ -276,7 +276,7 @@ __Based on my analysis of the data these are my summerized findings__
 
 ![Average Trip Duration](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/aea3a59d-7884-4bb3-ba06-3123359ab93f)
   
-- __*June and May stand out as the peak months for user activity, with both annual subscribers and casual users showing the highest engagement in these periods.*__
+- __*June and May stand out as the peak months for user activity, with both annual subscribers and casual customers showing the highest engagement in these periods.*__
 
  ![image](https://github.com/Khanyisa06/Cyclist_Bike-Share_Analysis/assets/106344554/fe56c334-6813-4229-b62d-e2fc4215cb84)
 
@@ -333,8 +333,8 @@ both Subscribers and Customers have an average start time for rides at 13:00 PM.
 ## Recommendation
 __These are my reccomandations__
 - Implement referral programs that reward current annual members for referring casual riders who successfully convert to annual memberships.
-- Leverage word-of-mouth marketing to encourage casual riders to consider the benefits of long-term membership.
-- Introduce limited-time promotional offers or discounts for casual riders who sign up for annual memberships.
+- Leverage word-of-mouth marketing to encourage casual customers to consider the benefits of long-term membership.
+- Introduce limited-time promotional offers or discounts for casual customers who sign up for annual memberships.
 - Provide free trial periods or bonus ride credits to encourage the transition to annual memberships.
 - Develop targeted marketing campaigns to attract more users, particularly females, to the subscriber category.
 - Allocate resources efficiently during peak months like June and May to meet increased demand.
