@@ -62,7 +62,7 @@ __I used Cyclistic’s historical trip data to analyze and identify trends.__ [D
  
 ## Data cleaning Steps
 
-__Below I outline the data cleaning steps I performed for the "Cyclist_Trip_Data" and "Quarterly data" datasets using both Excel and SQL Server Management Studio (SSMS).__ 
+__Below I outline the data cleaning steps I performed for the datasets using both Excel and SQL Server Management Studio (SSMS).__ 
 
 __*For Cyclist_Trip_Data I:*__
 1. load the data for inspection
@@ -75,15 +75,14 @@ __*For Cyclist_Trip_Data I:*__
 7. Manually corrected any inconsistent or erroneous data.
 
 __*For Quarterly data  I:*__
-
 1. Renamed columns to standardize names
  - "tripduraton" to "Trip_Duration"
  - "usertype" to "User_Type"
  - "birthyear" to "Birth_Year", Replaced null values in the Birth_Year column with 0.
  - "gender" to "Gender" , Replaced null values in the "Gender" column with "Not-Applicable."
-5. Converted time from seconds to minutes for Trip_duration.
-6. Formatted "Start_Time" and "End_Time" as "y:m:d h:s."
-7. Filtered and deleted rows with blank values.
+2. Converted time from seconds to minutes for Trip_duration.
+3. Formatted "Start_Time" and "End_Time" as "y:m:d h:s."
+4. Filtered and deleted rows with blank values.
  
 ## Exploratory Data Analysis
 
